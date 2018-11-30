@@ -12,10 +12,8 @@ def getUrl(postNum):
 #If the url isn't in image format, sets it
 def setImageUrl(url):   
     if not(url.endswith('.jpg')) and not(url.endswith('.jpeg')) and not(url.endswith('.png')):
-                url = url + '.jpg'
-                return url
-    if url.endswith('jpg') or url.endswith('.jpeg') or url.endswith('png'):
-        return url
+        url = url + '.jpg'
+    return url
 
 #Checks to make sure the link url is an actual picture and if not gets next post
 def checkUrl(url):
